@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    width: 100vh;
+}
+header {
+    display: inline-block;
+    margin: 20px;
+}
+header > h1 p{
+    justify-content: center;
+}
+article{
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 10px 1px #FF0000;
+}
+
+
+
+
+
+
+
+
+

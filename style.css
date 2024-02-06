@@ -2,27 +2,100 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: red;
+}
 
-}
-nav{
-    width: 100vh;
-}
 header {
     display: inline-block;
-    margin-top: 50px;
-    margin: 20x;
-}
-header > h1 p{
+    width: 60vh;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 20x;
+    
 }
-article{
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 3px 5px 10px 1px #FF0000;
+.titolo{
+    animation-name: titolo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+}
+.card{
+    display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+       
+}
+ .carousel{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    
+ }
+ .accordion{
+    display: flex;
+    width: 100vh;
+    margin-bottom: 20px;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px 0px #FF1803;
+
+}
+
+
+@media screen and (min-width 500px) {
+    .titolo{
+        width: 100%;
+    }
+   .card{
+    width: 100%;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+
+   }
+   .carousel{
+    width: 100vh;
+    margin-left: 0;
+   }
+   .accordion{
+    width: 100vh;
+   }
+    
+}
+@media screen and (min-width 760px) {
+    .titolo{
+        width: 100%;
+        margin-left: 40%;
+    }
+   .card{
+    width: 100%;
+    flex-direction: row;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+
+   }
 }
 
 
 
 
+
+@keyframes titolo {
+    from{
+        font-size: xx-small;
+    }
+    to {
+        font-size: large;
+    }
+
+}
 
 
